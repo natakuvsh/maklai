@@ -11,7 +11,7 @@ pip install -r requirements.txt
 ```
 uvicorn main:app
 ```
-2.	Open the browser at http://localhost:8000/paraphrase?tree=<tree:str>&limit=<limit:int>
+2.	Open the browser at http://localhost:8000/paraphrase?tree=tree&limit=limit
 ## Endpoints
 The API has one endpoint:
 
