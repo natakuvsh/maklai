@@ -8,7 +8,7 @@ app = FastAPI()
 
 
 @app.get("/paraphrase")
-def paraphrase(tree: str, limit: int = None):
+def paraphrase(tree: str, limit: int = 20):
 
     if not tree:
         raise HTTPException(status_code=400, detail="No tree provided")

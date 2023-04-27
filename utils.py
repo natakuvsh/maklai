@@ -4,6 +4,7 @@ from nltk import ParentedTree
 from typing import List
 
 
+
 def has_two_child_nps_and_cc_or_comma(tree):
     """
     :param tree: Receiving a subtree
@@ -51,7 +52,7 @@ def find_positions(ptree):
     return positions
 
 
-def paraphrase_tree(tree: str, limit: int = None):
+def paraphrase_tree(tree: str, limit: int = 20):
     """
     :param tree: receiving a tree as a string as like '(S(NP(NP (DT The) (JJ charming) (NNP Gothic) (NNP Quarter)))'
     :param limit: limit the paraphrase sentence quantity
